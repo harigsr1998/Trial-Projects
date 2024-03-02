@@ -814,6 +814,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pr-1{
+  padding-right: 0.25rem;
+}
+
 .font-dosis{
   font-family: Dosis;
 }
