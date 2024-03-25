@@ -578,6 +578,11 @@ video {
   margin: 1rem;
 }
 
+.mx-32{
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
 .mx-40{
   margin-left: 10rem;
   margin-right: 10rem;
@@ -588,8 +593,21 @@ video {
   margin-bottom: 6rem;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mb-28{
+  margin-bottom: 7rem;
+}
+
 .mb-36{
   margin-bottom: 9rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .ml-32{
@@ -610,6 +628,10 @@ video {
 
 .mt-24{
   margin-top: 6rem;
+}
+
+.mt-32{
+  margin-top: 8rem;
 }
 
 .mt-4{
@@ -660,6 +682,14 @@ video {
 .-translate-y-1\/2{
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-3{
@@ -726,6 +756,11 @@ video {
 .border-red-400{
   --tw-border-opacity: 1;
   border-color: rgb(248 113 113 / var(--tw-border-opacity));
+}
+
+.border-blue-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 
 .bg-red-400{
@@ -837,9 +872,19 @@ video {
   line-height: 1;
 }
 
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+
 .text-9xl{
   font-size: 8rem;
   line-height: 1;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl{
@@ -911,6 +956,15 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.progress-bar{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 0.25rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-red-400:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
@@ -919,4 +973,48 @@ video {
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .lg\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:mx-40{
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .xl\:mb-36{
+    margin-bottom: 9rem;
+  }
+
+  .xl\:mt-40{
+    margin-top: 10rem;
+  }
+
+  .xl\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .xl\:text-9xl{
+    font-size: 8rem;
+    line-height: 1;
+  }
 }
