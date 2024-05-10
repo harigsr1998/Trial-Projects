@@ -11,3 +11,5 @@ Portfolios/Portfolio 2/node_modules/
 Portfolios/Portfolio 2/src/
 Portfolios/Portfolio 2/*.json
 Portfolios/Portfolio 2/*.js
+Notes App/*
+!*/dist/
